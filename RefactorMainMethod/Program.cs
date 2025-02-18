@@ -44,7 +44,8 @@
                 Console.WriteLine("This rental exceeds 2000 SEK, special approval required.");
             }
 
-            Console.WriteLine($"Thank you for renting the {carModel}, {customerName}!");
+            Console.WriteLine($"Rental updated. Thank you, {customerName} for renting the {carModel}, at {dailyRate} SEK!");
+
 
 
             carModel = "Volvo EC40";
@@ -84,7 +85,8 @@
                 Console.WriteLine("This rental exceeds 2000 SEK, special approval required.");
             }
 
-            Console.WriteLine($"Thank you for renting the {carModel}, {customerName}!");
+            Console.WriteLine($"Rental updated. Thank you, {customerName} for renting the {carModel}, at {dailyRate} SEK!");
+
 
 
 
