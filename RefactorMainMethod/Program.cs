@@ -33,13 +33,15 @@
 
         public static void DisplayCarRental(CarRental rental)
         {
+            Console.WriteLine("---------------------------------------------------------------------");
             Console.WriteLine($"Car Model: {rental.CarModel}");
             Console.WriteLine($"Rental Days: {rental.RentalDays}");
             Console.WriteLine($"Daily Rate: {rental.DailyRate}");
             Console.WriteLine($"Total rental cost: {rental.TotalCost}");
+            Console.WriteLine(Environment.NewLine);
+            Console.WriteLine($"Rental updated. Thank you, {rental.CustomerName} for renting the {rental.CarModel}, at {rental.TotalCost} SEK!");
+            Console.WriteLine(Environment.NewLine);
 
-            Console.WriteLine($"Rental updated. Thank you, {rental.CustomerName} for renting the {rental.CarModel}, at {rental.DailyRate} SEK!");
-            Console.WriteLine(" ");
         }
 
     }

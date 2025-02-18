@@ -32,7 +32,7 @@ namespace RefactorMainMethod.Services
                     CustomerName = "Jane Doe",
                     CustomerLicenseNumber = "HJD345",
                     RentalDays = 3,
-                    DailyRate = 670,
+                    DailyRate = 650,
                 }
 
             }; 
