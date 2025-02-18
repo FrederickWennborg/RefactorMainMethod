@@ -21,7 +21,12 @@
 
                 rental.TotalCost = carRentalService.CalculateTotalCost(rental.RentalDays, rental.DailyRate);
 
-                DisplayCarRental(rental);
+                if (carRentalService.RequiresSpecialApproval(rental.TotalCost))
+                    Console.WriteLine("This rental exceeds 2000 SEK, special approval required.");
+
+                else
+                    DisplayCarRental(rental);
+
             }
 
         }
@@ -33,7 +38,7 @@
             Console.WriteLine($"Daily Rate: {rental.DailyRate}");
             Console.WriteLine($"Total rental cost: {rental.TotalCost}");
 
-            Console.WriteLine($"Rental updated. Thank you, {rental.CustomerName} for renting the {rental.CarModel}, at {rental.DailyRate}$!");
+            Console.WriteLine($"Rental updated. Thank you, {rental.CustomerName} for renting the {rental.CarModel}, at {rental.DailyRate} SEK!");
             Console.WriteLine(" ");
         }
 
