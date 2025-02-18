@@ -44,7 +44,7 @@
                 Console.WriteLine("This rental exceeds 2000 SEK, special approval required.");
             }
 
-            Console.WriteLine($"Rental updated. Thank you, {customerName} for renting the {carModel}, at {dailyRate} SEK!");
+            Console.WriteLine($"Rental updated. Thank you, {customerName} for renting the {carModel}, at {rentalCost} SEK!");
 
 
 
@@ -53,7 +53,7 @@
             customerName = "Jane Doe";
             customerLicenseNumber = "HJD345";
             rentalDays = 3;
-            dailyRate = 670;
+            dailyRate = 650;
 
             if (string.IsNullOrEmpty(customerName))
             {
@@ -85,7 +85,7 @@
                 Console.WriteLine("This rental exceeds 2000 SEK, special approval required.");
             }
 
-            Console.WriteLine($"Rental updated. Thank you, {customerName} for renting the {carModel}, at {dailyRate} SEK!");
+            Console.WriteLine($"Rental updated. Thank you, {customerName} for renting the {carModel}, at {rentalCost} SEK!");
 
 
 
